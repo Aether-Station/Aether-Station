@@ -1,0 +1,20 @@
+- type: entity
+  parent: ReinforcementRadio
+  id: OfferingFamiliarGrimalkin
+  name: Grimalkin Offering
+  description: Offer a delicious spread of wholesome food and a small cup of cream to call forth a Grimalkin to assist you in your tasks.
+  components:
+  - type: Sprite
+    sprite: _AS/Objects/Offerings/grimalkin.rsi
+    layers:
+    - state: grimalkin_offering
+  - type: GhostRole
+    name: ghost-role-information-grimalkin-name
+    description: ghost-role-information-grimalkin-description
+    rules: ghost-role-information-grimalkin-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: short
+  - type: GhostRoleMobSpawner
+    prototype: MobGrimalkin

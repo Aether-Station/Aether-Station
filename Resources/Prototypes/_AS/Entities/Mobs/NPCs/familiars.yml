@@ -1,0 +1,80 @@
+- type: entity
+  name: Grimalkin
+  id: MobBaseGrimalkin
+  parent: MobBaseAncestor
+  description: A small, friendly looking cat-like creature
+  abstract: true
+  components:
+  - type: Appearance
+  - type: HumanoidAppearance
+    species: Grimalkin
+  - type: Body
+    prototype: Grimalkin
+    requiredLegs: 2
+  - type: Sprite
+    color: "#ffffff"
+  - type: Inventory
+    templateId: Grimalkin
+    speciesId: Grimalkin
+  - type: Speech
+    speechSounds: Cat
+    speechVerb: Felinid
+    allowedEmotes: ['Meow', 'Hiss', 'Mew', 'Purr', 'Growl']
+  - type: Vocal
+    sounds:
+      Male: MaleFelinid
+      Female: FemaleFelinid
+      Unsexed: FemaleFelinid
+  - type: TypingIndicator
+    proto: felinid
+  - type: InteractionPopup
+    successChance: 0.9
+    interactSuccessString: petting-success-cat
+    interactFailureString: petting-failure-generic
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/cat_meow.ogg
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Critical
+      100: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 4.5
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 3
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeat
+      amount: 2
+
+- type: entity
+  name: Grimalkin
+  id: MobGrimalkin
+  parent: MobBaseGrimalkin
+  components:
+  - type: Pacified
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+  - type: GhostRole
+    prob: 1
+    makeSentient: true
+    name: ghost-role-information-monkey-name
+    description: ghost-role-information-monkey-description
+    rules: ghost-role-information-syndicate-reinforcement-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [FamiliarGrimalkinGear]

@@ -1,0 +1,141 @@
+- type: species
+  id: Grimalkin
+  name: Grimalkin
+  roundStart: false
+  prototype: MobGrimalkin
+  sprites: MobGrimalkinSprites
+  dollPrototype: MobGrimalkinDummy
+  skinColoration: Hues
+  defaultSkinTone: "#ffffff"
+  markingLimits: MobGrimalkinMarkingLimits
+
+- type: speciesBaseSprites
+  id: MobGrimalkinSprites
+  sprites:
+    Special: MobGrimalkinAnyMarking
+    Head: MobGrimalkinHead
+    HeadTop: MobGrimalkinAnyMarking
+    Chest: MobGrimalkinTorso
+    Tail: MobGrimalkinTail
+    Eyes: MobGrimalkinEyes
+    LArm: MobGrimalkinLArm
+    RArm: MobGrimalkinRArm
+    LHand: MobGrimalkinLHand
+    RHand: MobGrimalkinRHand
+    LLeg: MobGrimalkinLLeg
+    RLeg: MobGrimalkinRLeg
+    LFoot: MobGrimalkinLFoot
+    RFoot: MobGrimalkinRFoot
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinAnyMarking
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinMarkingMatchSkin
+  markingsMatchSkin: true
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinHead
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinHeadMale
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinHeadFemale
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: head
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinTorso
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinTorsoMale
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinTorsoFemale
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: torso
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinLLeg
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinLArm
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinLHand
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinLFoot
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinRLeg
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinRArm
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinRHand
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinRFoot
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: r_foot
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinTail
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: tail
+
+- type: humanoidBaseSprite
+  id: MobGrimalkinEyes
+  baseSprite:
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+    state: eyes
+
+- type: markingPoints
+  id: MobGrimalkinMarkingLimits
+  points:
+    Special:
+      points: 1
+      required: false
+    Chest:
+      points: 1
+      required: false
