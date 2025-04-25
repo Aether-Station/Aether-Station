@@ -1,0 +1,108 @@
+- type: entity
+  abstract: true
+  parent: BasePart
+  id: PartGrimalkin
+  components:
+  - type: Sprite
+    sprite: _AS/Mobs/Familiars/grimalkin.rsi
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  parent: [PartGrimalkin, BaseTorso]
+  id: TorsoGrimalkin
+  name: "Grimalkin torso"
+  components:
+  - type: Sprite
+    state: "torso"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
+
+- type: entity
+  parent: [PartGrimalkin, BaseHead]
+  id: HeadGrimalkin
+  name: "Grimalkin head"
+  components:
+  - type: Sprite
+    state: "head"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 5
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  parent: [PartGrimalkin, BaseLeftArm]
+  id: LeftArmGrimalkin
+  name: "left Grimalkin arm"
+  components:
+  - type: Sprite
+    state: "l_arm"
+
+- type: entity
+  parent: [PartGrimalkin, BaseRightArm]
+  id: RightArmGrimalkin
+  name: "right Grimalkin arm"
+  components:
+  - type: Sprite
+    state: "r_arm"
+
+- type: entity
+  parent: [PartGrimalkin, BaseLeftHand]
+  id: LeftHandGrimalkin
+  name: "left Grimalkin hand"
+  components:
+  - type: Sprite
+    state: "l_hand"
+
+- type: entity
+  parent: [PartGrimalkin, BaseRightHand]
+  id: RightHandGrimalkin
+  name: "right Grimalkin hand"
+  components:
+  - type: Sprite
+    state: "r_hand"
+
+- type: entity
+  parent: [PartGrimalkin, BaseLeftLeg]
+  id: LeftLegGrimalkin
+  name: "left Grimalkin leg"
+  components:
+  - type: Sprite
+    state: "l_leg"
+
+- type: entity
+  parent: [PartGrimalkin, BaseRightLeg]
+  id: RightLegGrimalkin
+  name: "right Grimalkin leg"
+  components:
+  - type: Sprite
+    state: "r_leg"
+
+- type: entity
+  parent: [PartGrimalkin, BaseLeftFoot]
+  id: LeftFootGrimalkin
+  name: "left Grimalkin foot"
+  components:
+  - type: Sprite
+    state: "l_foot"
+
+- type: entity
+  parent: [PartGrimalkin, BaseRightFoot]
+  id: RightFootGrimalkin
+  name: "right Grimalkin foot"
+  components:
+  - type: Sprite
+    state: "r_foot"

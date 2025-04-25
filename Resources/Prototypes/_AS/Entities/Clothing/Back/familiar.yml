@@ -1,0 +1,15 @@
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackPackGrimalkinPouch
+  name: Grimalkin Pouch
+  description: A little pouch for Grimalkin to carry their things.
+  components:
+  - type: Sprite
+    sprite: _AS/Clothing/Familiars/grimalkin_pouch.rsi
+    state: grimalkin_pouch
+  - type: Clothing
+    sprite: _AS/Clothing/Familiars/grimalkin_pouch.rsi
+  - type: Storage
+    grid:
+    - 0,0,1,1
+  - type: Unremoveable

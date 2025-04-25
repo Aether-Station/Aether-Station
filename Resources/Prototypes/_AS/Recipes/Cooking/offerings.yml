@@ -1,0 +1,12 @@
+- type: microwaveMealRecipe
+  id: RecipeGrimalkinOffering
+  name: grimalkin offering recipe
+  result: OfferingFamiliarGrimalkin
+  time: 10
+  group: Dessert
+  solids:
+    FoodPlateSmall: 1
+    FoodCheeseSlice: 1
+    FoodBreadCreamcheeseSlice: 1
+  reagents:
+    Cream: 5

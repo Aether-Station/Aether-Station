@@ -1,0 +1,50 @@
+- type: body
+  id: Grimalkin
+  name: "Grimalkin"
+  root: torso
+  slots:
+    head:
+      part: HeadGrimalkin
+      connections:
+      - torso
+      organs:
+        brain: OrganAnimalBrain
+        eyes: OrganAnimalEyes
+    torso:
+      part: TorsoGrimalkin
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      - head
+      organs:
+        heart: OrganAnimalHeart
+        lungs: OrganAnimalLungs
+        stomach: OrganAnimalStomach
+        liver: OrganAnimalLiver
+        kidneys: OrganAnimalKidneys
+    right arm:
+      part: RightArmGrimalkin
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmGrimalkin
+      connections:
+      - left hand
+    right hand:
+      part: RightHandGrimalkin
+    left hand:
+      part: LeftHandGrimalkin
+    right leg:
+      part: RightLegGrimalkin
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegGrimalkin
+      connections:
+      - left foot
+    right foot:
+      part: RightFootGrimalkin
+    left foot:
+      part: LeftFootGrimalkin
