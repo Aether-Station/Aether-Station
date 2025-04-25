@@ -12,7 +12,7 @@
   - type: HumanoidAppearance
     species: Grimalkin
   - type: Body
-    protoype: Grimalkin
+    prototype: Grimalkin
     requiredLegs: 2
   - type: UserInterface
     interfaces:
